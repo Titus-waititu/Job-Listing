@@ -25,8 +25,10 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-100 font-sans m-2">
-   
+    <div className="min-h-screen bg-gray-100 font-sans m-2 mb-3">
+   <header className='mb-8'>
+     <img src="images/bg-header-desktop.svg" alt="" />
+   </header>
       {filters.length > 0 && (
         <div className="relative z-10 -mt-8 mb-8 mx-auto w-11/12 max-w-5xl bg-white shadow-lg rounded-lg flex flex-wrap items-center px-6 py-4">
           <div className="flex flex-wrap gap-4 flex-1">
