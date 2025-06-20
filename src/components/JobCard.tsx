@@ -15,7 +15,7 @@ const JobCard = ({ job, onTagClick }: JobCardProps) => {
 
   return (
     <div
-      className={`relative bg-white shadow-md rounded-lg p-6 flex flex-col gap-4 sm:gap-6 sm:flex-row sm:items-center border-l-4 ${
+      className={`relative bg-white shadow-md rounded-lg p-4 flex flex-col gap-4 sm:gap-6 sm:flex-row sm:items-center border-l-4 ${
         job.featured ? "border-emerald-700" : "border-transparent"
       } transition-shadow duration-300`}
     >
@@ -58,7 +58,7 @@ const JobCard = ({ job, onTagClick }: JobCardProps) => {
         {tags.map((tag) => (
           <button
             key={tag}
-            className="bg-emerald-300 text-emerald-900 font-semibold px-3 py-1 rounded-full hover:bg-emerald-800 hover:text-white transition"
+            className="bg-emerald-200 text-emerald-900 font-semibold px-3 py-1 rounded hover:bg-emerald-800 hover:text-white transition"
             onClick={() => onTagClick(tag)}
           >
             {tag}
