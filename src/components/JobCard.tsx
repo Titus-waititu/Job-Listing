@@ -15,10 +15,10 @@ const JobCard = ({ job, onTagClick }: JobCardProps) => {
 
   return (
     <div
-      className={`relative bg-white shadow-md rounded-lg p-4 flex flex-col gap-4 sm:gap-6 sm:flex-row sm:items-center border-l-4 ${
-        job.featured ? "border-emerald-700" : "border-transparent"
-      } transition-shadow duration-300`}
-    >
+  className={`relative bg-white shadow-md rounded-lg p-4 flex flex-col gap-4 sm:gap-6 sm:flex-row sm:items-center border-l-4 ${
+    job.featured ? "border-emerald-700" : "border-transparent"
+  } transition-shadow duration-300 mt-6 sm:mt-0`}
+>
       <img
         src={job.logo}
         alt={job.company}
