@@ -15,8 +15,8 @@ export default function JobList({ jobs, filters, onJobClick }: JobListProps) {
 
   if (filteredJobs.length === 0) {
     return (
-      <div className="text-center py-12">
-        <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-gray-100 flex items-center justify-center">
+      <div className="text-center">
+        <div className=" mb-4 rounded-full bg-gray-100 flex items-center justify-center">
           <svg
             className="w-8 h-8 text-gray-400"
             fill="none"

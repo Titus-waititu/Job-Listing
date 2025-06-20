@@ -16,7 +16,7 @@ const JobCard = ({ job, onTagClick }: JobCardProps) => {
   return (
     <div
       className={`relative bg-white shadow-md rounded-lg p-6 flex flex-col md:flex-row md:items-center border-l-4 ${
-        job.featured ? "border-blue-700" : "border-transparent"
+        job.featured ? "border-emerald-700" : "border-transparent"
       } transition-shadow duration-300`}
     >
       <img
@@ -27,11 +27,11 @@ const JobCard = ({ job, onTagClick }: JobCardProps) => {
       />
       <div className="flex-1 flex flex-col gap-2 mt-4 md:mt-0">
         <div className="flex items-center gap-4">
-          <h3 className="text-blue-700 font-bold text-lg mr-2">
+          <h3 className="text-emerald-800  font-bold text-lg mr-2">
             {job.company}
           </h3>
           {job.new && (
-            <span className="uppercase text-xs bg-blue-700 text-white rounded-full px-2 py-1 font-bold">
+            <span className="uppercase text-xs bg-emerald-800  text-white rounded-full px-2 py-1 font-bold">
               New!
             </span>
           )}
@@ -56,7 +56,7 @@ const JobCard = ({ job, onTagClick }: JobCardProps) => {
         {tags.map((tag) => (
           <button
             key={tag}
-            className="bg-blue-100 text-blue-700 font-semibold px-3 py-1 rounded-full hover:bg-blue-700 hover:text-white transition"
+            className="bg-emerald-300 text-emerald-900 font-semibold px-3 py-1 rounded-full hover:bg-emerald-800 hover:text-white transition"
             onClick={() => onTagClick(tag)}
           >
             {tag}
