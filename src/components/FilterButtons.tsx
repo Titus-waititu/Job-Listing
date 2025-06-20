@@ -27,10 +27,6 @@ const FilterButtons = () => {
     );FilterData
   };
 
-//   const clearFilters = () => {
-//     setFilters([]);
-//   };
-
   return (
     <div className="p-4 bg-gray-100 rounded-md">
       <h2 className="text-lg font-semibold mb-2">Filter by:</h2>
@@ -49,19 +45,6 @@ const FilterButtons = () => {
           </button>
         ))}
       </div>
-      {/* {filters.length > 0 && (
-        <div className="flex items-center gap-4">
-          <span className="text-sm text-gray-600">
-            Active Filters: {filters.join(", ")}
-          </span>
-          <button
-            className="text-sm text-red-600 hover:underline"
-            onClick={clearFilters}
-          >
-            Clear All
-          </button>
-        </div>
-      )} */}
     </div>
   );
 };
