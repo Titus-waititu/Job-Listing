@@ -26,21 +26,21 @@ function App() {
 
   return (
     <div className="min-h-screen bg-gray-100 font-sans m-2 mb-3">
-   <header className='mb-8'>
+   <header className='mb-8 bg-emerald-700'>
      <img src="images/bg-header-desktop.svg" alt="" />
    </header>
       {filters.length > 0 && (
-        <div className="relative z-10 -mt-8 mb-8 mx-auto w-11/12 max-w-5xl bg-white shadow-lg rounded-lg flex flex-wrap items-center px-6 py-4">
+        <div className="relative z-10 -mt-14 mb-8 mx-auto w-11/12 max-w-5xl bg-white shadow-lg rounded-lg flex flex-wrap items-center px-6 py-4">
           <div className="flex flex-wrap gap-4 flex-1">
             {filters.map((filter) => (
               <span key={filter} className="flex items-center bg-cyan-200 text-emerald-800 font-semibold rounded overflow-hidden">
                 <span className="px-3 py-1">{filter}</span>
                 <button
-                  className="bg-cyan-200 hover:bg-black text-emerald-900 px-2 py-1"
+                  className="bg-emerald-700 hover:bg-black text-emerald-900 px-2 py-2"
                   onClick={() => removeFilter(filter)}
                   aria-label={`Remove ${filter}`}
                 >
-                  ×
+                  <img src="images/icon-remove.svg" alt="" />
                 </button>
               </span>
             ))}
